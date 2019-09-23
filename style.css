@@ -1,0 +1,74 @@
+body {
+  background-image: url("images/tile.png");
+  background-repeat: repeat;
+}
+
+p    {color: white;}
+
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 22;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #FFFFFF;
+}
+.hour-marks {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #FF4821;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+/* Group styling! */
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+}
