@@ -1,0 +1,11 @@
+body {
+	background-image: url("images/tile.png");
+	background-repeat: repeat;
+}
+
+#container {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+}
